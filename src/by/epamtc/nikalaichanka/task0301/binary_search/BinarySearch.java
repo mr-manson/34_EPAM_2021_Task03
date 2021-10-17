@@ -6,10 +6,10 @@ public class BinarySearch {
 
 	public static int binarySearch(int[] mass, int toSearch) {
 
-		int[] sortMass = Sort.bubbleSort(mass);
+		Sort.bubbleSort(mass);
 
 		int start = 0;
-		int end = sortMass.length - 1;
+		int end = mass.length - 1;
 
 		while (start <= end) {
 			int middle = (start + end) / 2;
