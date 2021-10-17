@@ -9,7 +9,6 @@ public class MinMax {
 			if (mass[i] < min)
 				min = mass[i];
 		}
-
 		return min;
 	}
 
@@ -20,7 +19,6 @@ public class MinMax {
 			if (mass[i] > max)
 				max = mass[i];
 		}
-
 		return max;
 	}
 
