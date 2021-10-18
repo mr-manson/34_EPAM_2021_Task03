@@ -2,11 +2,6 @@ package by.epamtc.nikalaichanka.task0301.logic;
 
 public class FibonacciNumber {
 
-	public static void main(String[] args) {
-
-		System.out.println(isFibonacciNumber(7));
-	}
-
 	public static boolean isFibonacciNumber(int a) {
 		boolean fib = false;
 		int frst = 0;
@@ -18,10 +13,10 @@ public class FibonacciNumber {
 			frst = scnd;
 			scnd = summ;
 		} while (a - summ != 0 && a - summ >= 0);
-		
-		fib = true;
 
+		if (a == summ) {
+			fib = true;
+		}
 		return fib;
 	}
-
 }
