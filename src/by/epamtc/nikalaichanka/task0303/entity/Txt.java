@@ -4,6 +4,8 @@ public class Txt {
 	
 	private String txt;
 	
+	public Txt () {}
+	
 	public Txt (String txt) {
 		this.txt = txt;
 	}
