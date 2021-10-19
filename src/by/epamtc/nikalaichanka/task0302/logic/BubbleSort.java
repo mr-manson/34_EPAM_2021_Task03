@@ -2,6 +2,8 @@ package by.epamtc.nikalaichanka.task0302.logic;
 
 public class BubbleSort {
 	
+	// ?????
+	
 	public static int[] bubbleSort(int[] mass) {
 		for (int i = 0; i < mass.length - 1; i++) {
 			for (int j = (mass.length - 1); j >= (i + 1); j--) {
