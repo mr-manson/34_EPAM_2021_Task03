@@ -58,10 +58,10 @@ public class Logic {
 	public static String deleteWordStartingConsonant(String str, int length) {
 
 		StringBuilder sb = new StringBuilder(str);
-		Pattern pattern = Pattern.compile("\\b[bcdfghjklmnpqrstvwxwzBCDFGHJKLMNPQRSTVWXWZ]\\w{" + (length - 1) + "}");
+		Pattern pattern = Pattern.compile("\\b[bcdfghjklmnpqrstvwxwzBCDFGHJKLMNPQRSTVWXWZ].{" + (length --) + "}");
 		Matcher matcher = pattern.matcher(sb);
 		while (matcher.find()) {
-		//	sb.deleteCharAt(sb.indexOf(matcher.group()));
+			sb.delete(matcher.start(), matcher.end());
 		}
 		return sb.toString();
 	}
