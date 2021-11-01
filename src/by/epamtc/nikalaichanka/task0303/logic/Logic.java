@@ -65,14 +65,4 @@ public class Logic {
 		}
 		return sb.toString();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
